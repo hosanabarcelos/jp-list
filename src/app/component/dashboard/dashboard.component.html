@@ -5,12 +5,15 @@
             style="height: 500px;"
         >
             <div class="col"></div>
-            <div class="col-md-6 bg-white shadow rounded">
+            <div 
+                class="col-md-6 shadow rounded"
+                style="background-color: #1C1C1C;"
+            >
                 <div 
                     class="card mt-4" 
                     style="background-color: #d63384"
                 >
-                    <h4 class="text-white ps-3 pt-2 pb-1">JP List 📝</h4>
+                    <h4 class="text-white ps-3 pt-2 pb-1 text-center">JP List 📝</h4>
                 </div>
 
                 <div class="shadow rounded">
@@ -23,25 +26,25 @@
                             [(ngModel)]="addTaskValue"
                         >
                         <button 
-                            class="btn btn-outline-success"    
+                            class="btn btn-success"    
                             type="button" 
                             (click)="addTask()"
                         >+</button>
                       </div>
                 </div>
 
-                <h5 class="mt-4 ps-3 pt-2 pb-1">Suas tarefas: </h5>
-                <div style="overflow-y: auto; height: 350px;">
+                <h5 class="mt-4 ps-3 pt-2 pb-1 text-white">Suas tarefas: </h5>
+                <div style="overflow-y: auto; height: 400px;">
                     <div 
                         class="m-3" 
                         *ngFor="let task of taskArr"
                     >
-                        <div class="p-2 shadow rounded">
+                        <div class="p-2 shadow rounded bg-secondary">
                             <div class="input-group row ps-3">
-                                <div class="card col-md-10 border-0">{{ task.task_name }}</div>
+                                <div class="col-md-10 border-0 rounded me-2 text-white mt-1">{{ task.task_name }}</div>
                                 <button 
-                                    class="btn btn-outline col p-1 rounded me-2" 
-                                    style="border-color: #d63384" 
+                                    class="btn col p-1 rounded me-2" 
+                                    style="background-color: #d63384" 
                                     data-bs-toggle="modal" 
                                     data-bs-target="#exampleModal"
                                     type="button"
@@ -49,7 +52,7 @@
                                 >✏️</button>
                                 <button 
                                     class="btn btn-outline col p-1 rounded" 
-                                    style="border-color: #ff0000" 
+                                    style="background-color: #d39b9b" 
                                     (click)="deleteTask(task)"
                                 >❌</button>
                             </div>
@@ -58,14 +61,27 @@
                 </div>
                 
                 <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
+                <div 
+                    class="modal fade" 
+                    id="exampleModal" 
+                    tabindex="-1" 
+                    role="dialog" 
+                    aria-labelledby="exampleModalLabel" 
+                    aria-hidden="true"
+                >
+                    <div 
+                        class="modal-dialog" 
+                        role="document"
+                    >
                     <div class="modal-content">
                         <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">Editar tarefa</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
+                            <span 
+                                class="close" 
+                                data-bs-dismiss="modal" 
+                                aria-label="Close"
+                                style="cursor: pointer;"
+                            >X</span>
                         </div>
                         <div class="modal-body">
                             <div class="input-group p-3 mt-2">
