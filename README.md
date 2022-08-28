@@ -10,7 +10,7 @@
 
 ##
 
-**JP List** é uma aplicação To Do List implementada em Angular, onde é possível criar, editar e remover tarefas.
+**JP List** é uma aplicação To Do List (Lista de tarefas) implementada em Angular, onde é possível criar, editar e remover tarefas.
 
   
  ## 📚 Tecnologias
