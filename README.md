@@ -1,27 +1,44 @@
-# TodoList
+<h1 align="center">
+    JP List
+</h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.1.
+<p align="center">
+    <img src="https://github.com/hosanabarcelos/jp-list/blob/master/jp-list.png" /> 
+  <br>
+     <img alt="Made by Hosana Barcelos" src="https://img.shields.io/badge/made%20by- HOSANA BARCELOS -%15C3D6?style=flat-square&color=d63384&labelColor=000000">
+</p>
 
-## Development server
+##
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+**JP List** é uma aplicação To Do List implementada em Angular, onde é possível criar, editar e remover tarefas.
 
-## Code scaffolding
+  
+ ## 📚 Tecnologias
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Tecnologias utilizadas no desenvolvimento:
 
-## Build
+- [Angular](https://angular.io/cli)
+- [Json Server](https://www.npmjs.com/package/json-server)
+- [Bootstrap](https://getbootstrap.com/)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## ⚙️ Configurando
 
-## Running unit tests
+Clonando o projeto:
+```bash
+$ git clone https://github.com/hosanabarcelos/jp-list.git
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Rodando:
+``` bash
+# instalando as dependências
+$ npm install
 
-## Running end-to-end tests
+# iniciando json-server
+$ json-server --watch db.json
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+# iniciando aplicação angular
+$ ng serve
+```
+---
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Feito com 🖤 by [Hosana Barcelos](https://github.com/hosanabarcelos).
